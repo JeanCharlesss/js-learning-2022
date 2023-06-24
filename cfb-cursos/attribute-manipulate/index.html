@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando atributos</title>
+    <style>
+        #carro{
+            width: 800px;
+            height: 400px;
+        }
+        .c1{
+            background-image: url(1.jpg);
+            background-size: 800px 400px;
+        }
+        .c2{
+            background-image: url(2.jpg);
+            background-size: 700px 450px;
+        }
+        .c3{
+            background-image: url(3.jpg);
+            background-size: 800px 400px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="trocaImage(1)" value="Image 1">
+    <input type="button" onclick="trocaImage(2)" value="Image 2">
+    <input type="button" onclick="trocaImage(3)" value="Image 3">
+    <input type="button" onclick="remover()" value="Remover">
+    <input type="button" onclick="verificar()" value="Verificar">
+
+    <div id="carro"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

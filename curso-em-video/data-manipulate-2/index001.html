@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    
+    <script>
+        // var valor1 = window.prompt('Digite o primeiro número:') -- guardando o primeiro número
+        // var valor2 = window.prompt('Digite o segundo número:') -- guardando o segundo número
+        // var s = valor1 + valor2
+        // window.alert('A soma dos valores é '+s) -- o prompt recebe String e concatena elas
+        // (number + number) para adição
+        // (string + string) para concatenar
+        var valor1 = Number.parseInt(window.prompt('Digite o primeiro número:')) // guardando o primeiro número convertendo para número Inteiro
+        var valor2 = Number.parseInt(window.prompt('Digite o segundo número:')) // guardando o segundo número convertendo para número Inteiro
+        var s = valor1 + valor2 // somando os valores inteiros guardado
+        window.alert('A soma de '+valor1+' + '+valor2+' valores é ' + String(s)) //apresentando a soma entre valor1 e valor2 guardado na variável s
+        window.alert(`A soma de ${valor1} + ${valor2} = ${s}`) // template string do ekmastring (usande crase ´´)
+        // Number.parseInt() convertendo o valor em inteiro
+        // Number.parseFloat() convertendo o valor em real
+        // podemos usar a forma simplificada Number() sem especificação ekmascript
+        // para converter NÚMERO em STRING usamos : String() ou também variavel.toString()
+    </script> 
+</body>
+</html>

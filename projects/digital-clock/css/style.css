@@ -1,0 +1,50 @@
+@font-face {
+font-family: 'digital';
+src: url(../font/DS-DIGI.TTF);
+}
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+font-family: "Roboto", sans-serif;
+background-color: #121212;
+color: rgb(0, 255, 13);
+}
+body > h1 {
+text-align: center;
+margin-top: 5px;
+}
+#relogio{
+font-size: 28px;
+border: solid 1px;
+border-radius: 10px;
+background-color: #121212;
+padding: 2px 50px;
+color: rgb(0, 255, 13);
+font-family: 'digital';
+display: block;
+height: 29;
+}
+#relogio:hover{
+transition:  0.6s;
+background-color: #fff;
+color: #121212;
+}
+#relogiobox {
+position: absolute;
+z-index: 1;
+left: 42%;
+top: 40px;
+margin-top: 10px;
+}
+#labelbox{
+position: absolute;
+z-index: 0;
+left: 43%;
+top: 40px;
+margin-top: 32px;
+}
+#relogiobox >img {
+width: 210px;
+}

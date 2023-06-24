@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            background: rgb(47, 255, 47);
+            color: white;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> <!--DOM Events-->
+        Clique Aqui
+    </div>
+    
+    <script>
+
+        var area = window.document.getElementById('area') // capturando por ID
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseover', dentro)
+        area.addEventListener('mouseout', fora)
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        } // função para quando o mouse clicar na div
+        function dentro(){
+            area.innerText = 'Entrou na area'
+            area.style.background = 'orange'
+        } // função para quando o mouse estiver dentro da div
+        function fora(){
+            area.innerText = 'Saiu da area'
+            area.style.background = 'blue'
+        } // função para quando mouse estiver fora da div
+    </script>
+</body>
+</html>

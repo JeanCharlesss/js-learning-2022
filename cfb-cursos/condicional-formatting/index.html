@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação Condicional</title>
+    <style>
+        @font-face {
+            font-family: 'ubuntu';
+            src: url(Ubuntu-M.ttf);
+        }
+        table{
+            font-family: 'ubuntu';
+            border-collapse: collapse;
+        }
+        table, td, tr, th{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="titulo"></div>
+    <table id="tbnotas">
+        <tr>
+            <th>Alunos</th><th>Nota 1</th><th>Nota 2</th><th>Resultado</th>
+        </tr>
+        <tr>
+            <th>Al1</th><th>25</th><th>35</th><th id="n1"></th>
+        </tr>
+        <tr>
+            <th>Al2</th><th>10</th><th>12.5</th><th id="n2"></th>
+        </tr>
+        <tr>
+            <th>Al3</th><th>50</th><th>32</th><th id="n3"></th>
+        </tr>
+        <tr>
+            <th>Al4</th><th>5</th><th>2.5</th><th id="n4"></th>
+        </tr>
+    </table>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            background-color: #ffffffc9;
+            font: normal 18px Arial;
+        }
+        #box {
+           height: 190px;
+           width: 400px;
+           background-color: white;
+           justify-content: center;
+           padding: 30px;
+           margin: 70px auto;
+           border-radius: 10px;
+           box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.135);
+           border: 1px solid rgba(0, 0, 0, 0.241);
+        }
+        #box > h1 {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.831);
+        }
+        .input-box {
+            padding: 4px 8px;
+            margin: 10px 4px;
+            border-radius: 10px;
+            border-style: none;
+            border: solid 1px rgba(0, 0, 0, 0.287);
+            outline: none; 
+        }
+        #somar {
+            color:white;
+            font-size: 20px;
+            height: 30px;
+            width: 50px;
+            border-radius: 30px;
+            border-style: none;
+            background-color: rgb(21, 158, 255);
+            transition-duration: 4ms;
+            transition-property:inherit;
+            margin: 0 0 10px 175px;
+        }
+        #somar:hover {
+            background-color: rgb(22, 143, 230);
+        }
+        #resultado {
+            padding: 10px;
+            height: 40px;
+            border-radius: 15px;
+            border: solid 1px rgba(0, 0, 0, 0.287);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>Soma</h1>
+        <input type="number" name="textn1" id="textn1" class="input-box" placeholder="Primeiro valor...">
+        <input type="number" name="textn2" id="textn2" class="input-box" placeholder="Segundo valor...">
+        <input type="button" value="=" id="somar" onclick="somar()">
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function somar() {
+            var t1 = window.document.getElementById('textn1')
+            var t2 = window.document.querySelector('input#textn2')
+            var soma = window.document.getElementById('resultado')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var s = n1 + n2
+            soma.innerHTML = `${s}`
+        }   
+    </script>
+</body>
+</html>

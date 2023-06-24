@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é o seu nome?') // Recebendo o valor na variável nome como string
+        document.write(`Olá ${nome}, seu nome tem ${nome.length} letras.<br>`) // usando a formatação para ver quantas letras tem a string
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()} <br>`) // usando a formatação para ver a variavel em letra MAIUSCULA
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()} <br>`) // usando a formatação para ver a variável em letra MINUSCULA
+    </script>
+</body>
+</html>

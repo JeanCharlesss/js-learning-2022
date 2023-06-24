@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var numero = Number.parseFloat(window.prompt('Digite o valor decimal:')) // recebendo a variavel float
+        document.write(`<h1>O número digitado é ${numero}</h1>`)
+        document.write(`O número formatado para 2 casas decimais é ${numero.toFixed(2)} <br>`) // formatando usando .toFixed(quantidade) para formatar as casas decimais
+        document.write(`O número formatado para ter virgulas é ${numero.toFixed(2).replace('.',',')} <br>`) // formatando tambem usando .replace para trocar o ponto . para virgula ,
+        document.wirte(`O número formatado para valor monetário é ${numero.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)  // formatando usando para valores monetários 
+    </script>
+</body>
+</html>

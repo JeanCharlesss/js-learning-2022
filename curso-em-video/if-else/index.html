@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else JS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font: normal 18px Arial;
+        }
+        body > h1 {
+            text-align : center;
+            margin-top: 10px;
+        }
+        #box1{
+            border: 1px solid rgba(0, 0, 0, 0.453);
+            margin: 0 auto 0 auto;
+            height: 180px;
+            width: 550px;
+            padding: 10px 0 0 10px;
+            transform: translateY(20px);
+            border-radius: 10px;
+        }
+        #res{
+            border: 1px dashed rgba(0, 0, 0, 0.453);
+            width: 300px;
+            margin: 10px auto 0 auto;
+            width: 500px;
+            height: 40px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+        #box1 > h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #box1 > #p1 {
+            display: inline;
+            margin-left: 20px;
+        }
+        #box2{
+            border: 1px solid rgba(0, 0, 0, 0.453);
+            margin: 0 auto 20px auto;
+            width: 550px;
+            height: 570px;
+            padding: 10px 0 0 10px;
+            transform: translateY(40px);
+            border-radius: 10px;
+        }
+        #box2 > h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #box2 > #p2 {
+            display: inline;
+            margin-left: 20px;
+        }
+        #res2 {
+            margin: 20px auto 0 auto;
+            border: 1px dashed rgb(148, 148, 148);
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+            background-color: rgba(220, 220, 220, 0.246);
+            padding: 20px;
+            font-size: 14px;
+        }
+        input#txtvel {
+            padding-left: 5px;
+            height: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.453);
+        }
+        input#txtvel:focus {
+            border-color: rgb(0, 136, 255);
+            outline: 0;
+        }
+        input#txtbr {
+            padding-left: 5px;
+            height: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.453);
+        }
+        input#txtbr:focus {
+            border-color: rgb(0, 136, 255);
+            outline: 0;
+        }
+        input#button:hover {
+            background-color: rgb(9, 98, 177);
+        }
+        #button {
+            background-color: rgb(0, 136, 255);
+            border: none;
+            height: 30px;
+            width: 70px;
+            border-radius: 20px;
+            color: white;
+        }
+        img {
+            border-radius: 5px;
+            margin-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>If Else JavaScript</h1>
+    <div id="box1">
+        <h1>Verificador de velocidade</h1>
+        <p id="p1">Velocidade do carro:</p> <input type="number" name="txtvel" id="txtvel" placeholder="velocidade...">
+        <input type="button" value="Verificar" onclick="calcular()" id="button">
+        <div id="res">
+
+        </div>
+        <div id="img1">
+        </div>
+    </div>
+    <div id="box2">
+        <h1>Verificador de estrangeiro</h1>
+        <p id="p2">País nativo:</p> <input type="text" name="txtbr" id="txtbr" placeholder="país..">
+        <input type="button" value="Verificar" onclick="calcular2()" id="button">
+        <div id="res2">
+
+        </div><br><br>
+    </div>
+    <script>
+        function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = (`<p>Sua velocidade atual é de <strong>${vel}KM/h</strong></p>`)
+            if ( vel > 60){
+                res.innerHTML += ('<p>Você está <strong>Multado!</strong></p>')
+            } else {
+                res.innerHTML += ('<p>Você está na velocidade <strong>permitida!</strong></p>')
+            }
+        }
+        function calcular2(){
+            var txtbr = window.document.querySelector('input#txtbr').value.toLowerCase();
+            var res2 = window.document.querySelector('div#res2')
+            var pais = String(txtbr)
+            if (pais == 'brasil'){
+                res2.innerHTML += ('<p>Você é <strong>brasileiro!</strong> :D</p><br>')
+                res2.innerHTML += ('<img src="simbr.png" class="img2">')
+            }else {
+                res2.innerHTML += ('<p>Você é <strong>estrangeiro</strong>... :(</p><br>')
+                res2.innerHTML += ('<img src="naobr.png" class="img2">')
+            }
+
+        }
+    </script>
+</body>
+</html>

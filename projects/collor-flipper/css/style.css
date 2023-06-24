@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px 20px 40px;
+    background-color: rgb(243, 243, 243);
+    color: rgb(32, 32, 32);
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.342);
+}
+.header > .logo{
+    color: rgb(50, 190, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.navigation > .nav-list{
+    display: flex;
+    gap: 50px;
+}
+.nav-list{
+    list-style: none;
+}
+.nav-list-items > a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+    transition: all 0.2s;
+}
+.nav-list-items > a:hover{
+    color: rgb(50, 190, 255);
+}
+.container{
+    flex: 1 0 auto;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 30px 40px;
+    box-shadow: 8px 8px  black;
+}
+.content > h2 {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.content > button {
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+}
+.content > button:hover {
+    margin: 17.5px;
+    height: 55px;
+    width: 110px;
+}
+.content > h2 > .rgb{
+    color: rgb(50, 190, 255);
+}
+.footer{
+    background-color: rgb(243, 243, 243);
+    padding: 5px;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+}
+.footer > h4{
+    font-size: 13px;
+}
+.footer > h4 > a{
+    text-decoration: none;
+    color: rgb(50, 190, 255);
+}

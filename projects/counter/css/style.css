@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(255, 255, 255, 0.771);
+    font: normal 30px Arial;
+}
+.container > h1 {
+    margin: 10px;
+    text-align: center;
+    font-size: 34px;
+}
+h3{
+    text-align: center;
+    color: rgb(88, 88, 88);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+#box {
+    background-color: rgb(255, 255, 255);
+    height: 530px;
+    width: 600px;
+    margin: 0 auto 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.275);
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.233);
+}
+.input > input {
+    border: 1px solid rgba(0, 0, 0, 0.275);
+    width: 70%;
+    height: 30px;
+    border-radius: 14px;
+    outline: none;
+    font: 18px normal arial;
+    padding-left: 15px;
+}
+#inicio {
+    margin-left: 22px;
+}
+#fim{
+    margin-left: 43px;
+}
+#passo{
+    margin-left: 9px;
+}
+#resultado{
+    border: 1px dashed rgba(0, 0, 0, 0.331);
+    width: 98%;
+    height: 300px;
+    margin: 20px 10px 10px -5px;
+    border-radius: 14px;
+    padding: 10px;
+    font: 20px arial ;
+}
+#contar{
+    background-color: rgb(0, 98, 255);
+    color: white;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 18px;
+    transition: 5ms;
+    margin-left: 10px;
+}
+#contar:hover{
+    background-color: rgb(0, 85, 223);
+}
+.input {
+    margin: 10px
+}

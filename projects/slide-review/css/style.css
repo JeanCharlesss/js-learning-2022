@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+}
+body{
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px 20px 40px;
+    background-color: rgb(243, 243, 243);
+    color: rgb(32, 32, 32);
+    align-items: center;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.342);
+}
+.header > .logo{
+    color: rgb(50, 190, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+main{
+    flex: 1 0 auto;
+    background-color: rgba(61, 194, 255, 0.301);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+.underline{
+    height: 3px;
+    width: 100px;
+    background-color: rgb(50, 190, 255);
+    margin: 0 auto 20px auto;
+}
+.card{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.img{
+    margin: 10px auto;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid rgb(50, 190, 255);
+    box-shadow: 5px -3px 0px rgb(50, 190, 255);
+}
+.img > img{
+    height: 100%;
+    width: 100%;
+}
+.ball{
+    display: flex;
+    background-color: rgb(50, 190, 255);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(250%) ;
+    text-align: center;
+}
+.ball > i {
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.name{
+    text-align: center;
+}
+.job{
+    text-align: center;
+    color: rgb(50, 190, 255);
+}
+.desc{
+    text-align: center;
+}
+.controler{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 25px;
+}
+.controler > button{
+    justify-content: center;
+    text-align: center;
+    color: rgba(50, 190, 255, 0.541);
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.controler > .prev:hover{
+    font-size: 1.7rem;
+    color: rgb(50, 190, 255);
+}
+.controler > .next:hover{
+    font-size: 1.7rem;
+    color: rgb(50, 190, 255);
+}
+
+
+.footer{
+    background-color: rgb(243, 243, 243);
+    padding: 5px;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: center;
+}
+.footer > h4{
+    font-size: 13px;
+}
+.footer > h4 > a{
+    text-decoration: none;
+    color: rgb(50, 190, 255);
+}

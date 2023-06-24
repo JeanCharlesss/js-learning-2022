@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html, body {
+    height: 100%;
+}
+body{
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.274);
+    transition: 0.3s;
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    height: 60px;
+    font-size: 21px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 1s;
+    align-items: center;
+}
+.btn > i {
+    transition: 1s;
+}
+.btn:hover > i{
+    color: rgb(50, 190, 255);
+}
+.menu-item{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    transition: 1s;
+    padding: 0 20px;
+    cursor: pointer;
+} 
+.menu-item > a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-weight: 500;
+    transition: 1s;
+}
+.menu-item:hover > a{
+    color: rgb(50, 190, 255);
+}
+.menu-item:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+    padding-left: 30px;
+    color: rgb(50, 190, 255);
+}
+.icon{
+    max-width: 60px;
+    min-width: 60px;
+}
+.txt{
+    transition: 1s;
+}
+.closed{
+   width: 60px;
+}
+.closed .txt{
+    display: none;
+    transition: 1s;
+}
+.closed .btn i{
+    transform: rotate(-180deg);
+}
+.main{
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 134, 196, 0.226);
+}
+
+.footer{
+    background-color: rgb(243, 243, 243);
+    padding: 5px;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+.footer > h4{
+    font-size: 13px;
+}
+.footer > h4 > a{
+    text-decoration: none;
+    color: rgb(50, 190, 255);
+}

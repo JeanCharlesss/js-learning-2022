@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Idade</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Detector de idade</h1>
+            <div id="box">
+                <form>
+                <span id="sp1">Ano de nascimento: <input type="number" name="nasc" id="nasc" placeholder="1995..."></span>
+                <div>
+                <input type="radio" id="masc" name="sexo"><label for="masc">Masculino</label>
+                <input type="radio" id="fem" name="sexo"><label for="fem">Feminino</label>
+                </div>
+                <button type="button" id="verificar">Verificar</button>
+                <p id="resultado">Você é _____ com __ anos, do gênero _______ .</p> 
+                <img src="img/vazio.png" alt="imagem" id="img">  
+                </form>
+            </div>
+            <h3>© Jean Charles 2022</h3>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

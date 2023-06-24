@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <style>
+        body{
+            background-color: rgb(67, 186, 255);
+            font: normal 16px Arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Iniciando estudos em DOM</h1>
+    <p> Aprendendo a pegar os elementos</p>
+    <p name="paragrafo2">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="div1">Aprendendo a modificar os elementos do DOM</div>
+    <div id="div2"> Usando QuerySelector</div>
+    
+    <script>
+        var corpo = window.document.body
+        var titulo = window.document.getElementsByClassName('titulo')[0]
+        var paragrafo1 = window.document.getElementsByTagName('p')[0] // pegando o elemento pela Tag (P), no caso o primeiro P na posição 0 [0]
+        var paragrafo2 = window.document.getElementsByName('paragrafo2')[0]
+        var div1 =  window.document.getElementById('div1')
+        var div2 = window.document.querySelector('div#div2')
+        /*
+        corpo.style.background = 'blue' // alterando pelo documento o estilo de fundo no body 
+        titulo.innerText = 'Texto Modificado pela Classe'
+        paragrafo1.style.background = 'Red' // alterando pela variavel d que recebeu do id msg o elemento p e alterando a cor de fundo para verde
+        paragrafo2.innerText = 'Este texto foi modificado pela TAG'
+        div1.innerHTML = 'Este texto foi modificado pelo ID' // alterando o texto interno do html atravez do JS
+        div2.style.color = 'blue'
+        */
+        
+
+    </script>
+</body>
+</html>

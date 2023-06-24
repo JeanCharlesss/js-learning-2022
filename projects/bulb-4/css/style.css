@@ -1,0 +1,10 @@
+.cardMain{
+    width: 500px;
+    margin: 100px auto;
+}
+.card-body{
+    margin: 0 auto 0 auto;
+}
+.btn{
+    width: 140px;
+}
