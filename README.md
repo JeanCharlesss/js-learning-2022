@@ -1,4 +1,4 @@
-# Java Exercises Solutions [ ETEC ]
+# Javascript Learning Journey
 
 Author: Jean Charles  
 Github: [JeanCharlesss](https://github.com/JeanCharlesss)  
